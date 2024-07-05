@@ -4,9 +4,9 @@ import { create, deleteUser, getAll, getOne, update } from "../controller/userCo
 const route = express.Router();
 
 route.post("/create", create);
-route.get("/getall", getAll);
-route.get("/getone/:id", getOne);
-route.put("/update/:id", update);
-route.delete("/delete/:id", deleteUser);
+route.get("/getAllUser", getAll);
+route.get("/getUser/:id", getOne);
+route.put("/updateUser/:id", update);
+route.delete("/deleteUser/:id", deleteUser);
 
 export default route;
